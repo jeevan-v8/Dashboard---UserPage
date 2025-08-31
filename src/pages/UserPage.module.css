@@ -1,0 +1,21 @@
+/* src/pages/UserPage.module.css */
+.pageWrapper {
+  min-height: 100vh; /* full height */
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+  background-color: #f9fafc; /* light background override */
+}
+
+.tableWrapper {
+  width: 100%;
+  padding: 1rem;
+}
+
+.pagetitle{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
