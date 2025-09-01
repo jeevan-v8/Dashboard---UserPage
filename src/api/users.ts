@@ -1,5 +1,3 @@
-
-// src/api/users.ts
 // src/api/users.ts
 import axios from "axios";
 import type { User } from "../models/types";

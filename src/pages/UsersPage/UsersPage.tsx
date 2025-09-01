@@ -1,8 +1,7 @@
 // src/pages/UsersPage.tsx
 import { useEffect, useState } from "react";
-// import { useMemo } from "react";
-import { fetchUsers, updateUserStatus } from "../api/users";
-import { type User } from "../models/types";
+import { fetchUsers, updateUserStatus } from "../../api/users";
+import { type User } from "../../models/types";
 import {
   MaterialReactTable,
   type MRT_ColumnDef,
@@ -16,10 +15,9 @@ import {
   Snackbar,
   Alert,
 } from "@mui/material";
-import styles from "./UserPage.module.css";
+import styles from "./UsersPage.module.css";
 import type { PaginationState } from "@tanstack/react-table";
-import dayjs from "dayjs";
-import ErrorBoundary from "../components/errorBoundary";
+import ErrorBoundary from "../../components/errorBoundary";
 
 export default function UsersPage() {
   const [users, setUsers] = useState<User[]>([]);
@@ -92,13 +90,13 @@ useEffect(() => {
         />
       ),
     },
-    {
-      accessorKey: "createdAt",
-      header: "Joined",
-      size: 140,
-      Cell: ({ cell }) =>
-        dayjs(cell.getValue<string>()).format("YYYY-MM-DD"),
-    },
+    // {
+    //   accessorKey: "createdAt",
+    //   header: "Joined",
+    //   size: 140,
+    //   Cell: ({ cell }) =>
+    //     dayjs(cell.getValue<string>()).format("YYYY-MM-DD"),
+    // },
     {
       accessorKey: "groups",
       header: "Groups",
@@ -190,7 +188,7 @@ useEffect(() => {
             enableRowSelection
             enableGlobalFilter
             enableColumnFilters // ✅ per-column filters
-            enableRowVirtualization // ✅ virtualization
+            enableRowVirtualization={process.env.NODE_ENV !== "test"} 
             onColumnVisibilityChange={setColumnVisibility}
             onSortingChange={setSorting}
             onGlobalFilterChange={setGlobalFilter}
