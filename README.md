@@ -6,6 +6,12 @@ Implements a metadata-driven data grid using Material React Table (MRT), with mo
 
 ---
 
+## Demo
+
+### 🎥 Video Demo  
+[![Watch the demo](./src/assets/images/demo.mp4)]
+
+
 ## 🚀 Tech Stack
 
 	•	React 18+ with TypeScript (strict mode)
@@ -14,14 +20,13 @@ Implements a metadata-driven data grid using Material React Table (MRT), with mo
 	•	MSW (Mock Service Worker) for API mocking
 	•	Axios for API requests
 	•	ESLint + Prettier for linting/formatting
-	•	Vitest + React Testing Library + MSW for unit testing
 
 ---
 
 ## ✨ Features
 
 ### Users Grid
-	•	Metadata-driven columns (string, badge, date, chiplist)
+	•	Metadata-driven columns
 	•	Sorting, filtering, pagination (server-side via MSW)
 	•	Row virtualization for performance
 
@@ -43,21 +48,34 @@ Implements a metadata-driven data grid using Material React Table (MRT), with mo
 
 ```
 src/
-├── api/              # Axios services
+├── api/               # Axios API services
 │   └── users.ts
-├── components/       # Reusable components
-│   └── ErrorBoundary.tsx
-├── mocks/            # MSW handlers + browser setup
+├── assets/            # Static assets (images, demo video, icons, etc.)
+│   └── images/
+├── components/        # Reusable components
+│   ├── errorBoundary.tsx
+│   └── tables/
+│       └── UsersTable.tsx
+├── layouts/           # Layout wrappers
+│   └── MainLayouts.tsx
+├── mocks/             # MSW mock API setup
+│   ├── browser.ts
 │   ├── handlers.ts
-│   └── browser.ts
-├── models/           # TypeScript models
+│   └── server.ts
+├── models/            # TypeScript models/types
 │   └── types.ts
-├── pages/            # Route-based pages
-│   └── UsersPage.tsx
-├── utils/            # Helpers (e.g., column metadata)
-├── App.tsx           # Root component
-├── main.tsx          # Entry point
-└── setupTests.ts     # Vitest + RTL setup
+├── pages/             # Route-based pages
+│   ├── NotFoundPage/
+│   │   └── NotFoundPage.tsx
+│   └── UsersPage/
+│       ├── UsersPage.tsx
+│       ├── UsersPage.module.css
+│       └── UsersPage.test.tsx
+├── utils/             # Helpers & utilities
+├── App.tsx            # Root App
+├── main.tsx           # Entry point
+├── routes.tsx         # Central route config
+├── setupTests.ts      # Vitest + RTL setup
 
 ```
 ### Installation
@@ -101,7 +119,6 @@ src/
 ## 👤 Author
 
 ```
-Your Name (JeevanKumar R)
+JeevanKumar R
 📧 jeevankumar.krm@gmail.com
-💼 LinkedIn Profile : 
 ```

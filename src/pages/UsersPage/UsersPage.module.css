@@ -1,6 +1,6 @@
 /* src/pages/UserPage.module.css */
 .pageWrapper {
-  min-height: 100vh; /* full height */
+  min-height: 100vh; 
   display: flex;
   min-width: 100%;
   justify-content: center;

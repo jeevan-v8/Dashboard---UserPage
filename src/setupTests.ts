@@ -1,6 +1,6 @@
 // src/setupTests.ts
 import { expect, afterAll, afterEach, beforeAll } from "vitest";
-import * as matchers from "@testing-library/jest-dom/matchers"; // 👈 import everything as object
+import * as matchers from "@testing-library/jest-dom/matchers"; 
 import { server } from "./mocks/server";
 
 // extend Vitest's expect with jest-dom matchers

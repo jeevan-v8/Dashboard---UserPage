@@ -1,4 +1,5 @@
 // src/pages/UsersPage.tsx
+
 import { useEffect, useState } from "react";
 import { fetchUsers, updateUserStatus } from "../../api/users";
 import { type User } from "../../models/types";
@@ -11,7 +12,6 @@ import type {
 } from "@tanstack/react-table";
 import UsersTable from "../../components/tables";
 import ErrorBoundary from "../../components/errorBoundary";
-import MainLayout from "../../layouts/MainLayouts";
 
 export default function UsersPage() {
   const [users, setUsers] = useState<User[]>([]);
