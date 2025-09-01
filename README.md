@@ -8,8 +8,9 @@ Implements a metadata-driven data grid using Material React Table (MRT), with mo
 
 ## Demo
 
-### 🎥 Video Demo  
-[![Watch the demo](https://github.com/user-attachments/assets/34298c55-27a3-49d8-abdc-559646563ebd)]
+### 🎥 Video Demo 
+ 
+(https://github.com/user-attachments/assets/34298c55-27a3-49d8-abdc-559646563ebd)
 
 
 ## 🚀 Tech Stack
