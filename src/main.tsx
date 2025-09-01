@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-if (process.env.NODE_ENV === "development") {
+if (import.meta.env.MODE !== "test") {
   const { worker } = await import("./mocks/browser");
   await worker.start();
 }
