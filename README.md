@@ -82,9 +82,20 @@ src/
   👉 Live Demo on Vercel/Netlify
 
 ## 📸 Screenshots
-	•	Users Table with search & filters
-	•	Toggle Status snackbar
-	•	Empty state & error handling
+### 1. Users List Page
+	![Users List](./src/assets/images/users-list.png)
+
+	### 2. Search in Action
+	![Search](./src/assets/images/search.png)
+
+	### 3. Activate / Deactivate with Snackbar
+	![Toggle Status](./src/assets/images/toggle-status.png)
+
+	### 4. Empty State
+	![Empty State](./src/assets/images/empty-state.png)
+
+	### 5. 404 Page
+	![Not Found](./src/assets/images/404.png)
 
 ## 👤 Author
 
