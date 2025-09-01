@@ -83,19 +83,20 @@ src/
 
 ## 📸 Screenshots
 ### 1. Users List Page
-	![Users List](./src/assets/images/users-list.png)
 
-	### 2. Search in Action
-	![Search](./src/assets/images/search.png)
+![Users List](./src/assets/images/users-list.png)
 
-	### 3. Activate / Deactivate with Snackbar
-	![Toggle Status](./src/assets/images/toggle-status.png)
+### 2. Search in Action
+![Search](./src/assets/images/search.png)
 
-	### 4. Empty State
-	![Empty State](./src/assets/images/empty-state.png)
+### 3. Activate / Deactivate with Snackbar
+![Toggle Status](./src/assets/images/toggle-status.png)
 
-	### 5. 404 Page
-	![Not Found](./src/assets/images/404.png)
+### 4. Empty State
+![Empty State](./src/assets/images/empty-state.png)
+
+### 5. 404 Page
+![Not Found](./src/assets/images/404.png)
 
 ## 👤 Author
 
