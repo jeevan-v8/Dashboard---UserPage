@@ -16,7 +16,7 @@ test("renders Users List title", () => {
 
 test("loads users into table (regex anchor)", async () => {
   render(<UsersPage />);
-  // Match only exact "User 1"
+  // Match only exact User
   const firstCell = await screen.findByRole("cell", { name: /^User 1$/i });
   expect(firstCell).toBeInTheDocument();
 });
@@ -24,7 +24,7 @@ test("loads users into table (regex anchor)", async () => {
 test("toggles user status with optimistic UI (regex anchor)", async () => {
   render(<UsersPage />);
 
-  // Step 1: Find the exact User 1 cell
+  // Step 1: Find the exact User cell
   const user1Cell = await screen.findByRole("cell", { name: /^User 1$/i });
   expect(user1Cell).toBeInTheDocument();
 

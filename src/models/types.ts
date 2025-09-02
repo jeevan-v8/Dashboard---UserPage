@@ -1,6 +1,4 @@
 // src/models/types.ts
-
-// types.ts
 export type Group = {
   id: string;
   name: string;
