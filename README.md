@@ -42,7 +42,10 @@ Implements a metadata-driven data grid using Material React Table (MRT), with mo
 	•	Loading skeletons + spinners
 	•	Error boundary for safe rendering
 	•	Accessible labels for actions
-
+### Other
+	•	Persist column visibility/sort in URL or localStorage
+	•	Unit tests for key components/hooks
+	•	Role‑based UI hints
 
 ## Folder Strucutre 
 
