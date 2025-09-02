@@ -86,7 +86,7 @@ src/
     cd admin-dashboard
     npm install  # Install dependencies
     npm run dev  # Run dev server
-    npm run test # Run tests
+    npm run test:run # Run tests
 
 
 ## 🧪 Tests
