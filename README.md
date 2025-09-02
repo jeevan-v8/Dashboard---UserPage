@@ -8,10 +8,6 @@ Implements a metadata-driven data grid using Material React Table (MRT), with mo
 
 ## Demo
 
-### 🎥 Video Demo 
-
-## Demo
-
 ### 🎥 Video Demo  
 [![Watch the demo](./src/assets/images/demo-thumbnail.png)](https://github.com/user-attachments/assets/34298c55-27a3-49d8-abdc-559646563ebd)
 
@@ -31,7 +27,7 @@ Implements a metadata-driven data grid using Material React Table (MRT), with mo
 
 ### Users Grid
 	•	Metadata-driven columns
-	•	Sorting, filtering, pagination (server-side via MSW)
+	•	Sorting, filtering, pagination
 	•	Row virtualization for performance
 
 ### Row Actions
@@ -100,8 +96,7 @@ src/
 
 ## 🌍 Deployment
 
-  This project is deployed at:
-  👉 Live Demo on Vercel/Netlify
+  This project is deployed at: 👉 https://adminpagedashboard.netlify.app/
 
 ## 📸 Screenshots
 ### 1. Users List Page
